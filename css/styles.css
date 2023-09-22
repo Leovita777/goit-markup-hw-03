@@ -5,8 +5,19 @@
   background-color: #ffffff;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 ul {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 a {
@@ -16,6 +27,21 @@ a {
 a:hover,
 a:focus {
   color: #4d5ae5;
+}
+
+.container {
+  width: 100%;
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/* ===== HEADER ===== */
+
+header {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .head {
@@ -87,23 +113,32 @@ a:focus {
   color: #404bbf;
 }
 
+/* ===== MAIN ===== */
+/* +++++ Container1 +++++ */
 .content {
 }
 
-.content-quote {
-  background: #2e2f42;
+.quote {
+  padding-bottom: 120px;
 }
 
-.content-quote-title {
+.quote-container {
+  background: #2e2f42;
+  padding: 188px 472px 292px;
+}
+
+.quote-title {
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
+  margin-bottom: 32px;
+  max-width: 496px;
 }
 
-.content-quote-btn {
+.quote-btn {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -113,12 +148,14 @@ a:focus {
   cursor: pointer;
 }
 
-.content-quote-btn:hover,
-.content-quote-btn:focus {
+.quote-btn:hover,
+.quote-btn:focus {
   background-color: #404bbf;
 }
 
+/* +++++ Container2 +++++ */
 .desc {
+  padding: 120px 156px;
 }
 
 .visually-hidden {
@@ -135,6 +172,7 @@ a:focus {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .desc-list-text {
@@ -143,6 +181,7 @@ a:focus {
   letter-spacing: 0.02em;
 }
 
+/* +++++ Container3 +++++ */
 .team {
   background-color: #f4f4fd;
 }
@@ -182,6 +221,7 @@ a:focus {
   letter-spacing: 0.02em;
 }
 
+/* +++++ Container4 +++++ */
 .portfolio {
   background-color: #f4f4fd;
 }
@@ -217,9 +257,12 @@ a:focus {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
+/* ===== FOOTER ===== */
 .foot {
   background: #2e2f42;
 }
+
 .foot-link {
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -229,6 +272,7 @@ a:focus {
   color: #4d5ae5;
   text-transform: uppercase;
 }
+
 .foot-link-foot {
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -238,6 +282,7 @@ a:focus {
   color: #f4f4fd;
   text-transform: uppercase;
 }
+
 .foot-quote {
   font-size: 16px;
   line-height: 1.5;
