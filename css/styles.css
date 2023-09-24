@@ -44,12 +44,11 @@ img {
 /* ===== HEADER ===== */
 
 header {
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .head {
   background: #ffffff;
+  border-bottom: 1px solid #E7E9FC
 }
 
 .head:hover {
@@ -62,9 +61,9 @@ header {
 
 .head-nav {
   display: flex;
-  gap: 76px;
   flex-grow: 1;
   justify-content: space-between;
+  align-items: center;
 }
 
 .head-nav-link {
@@ -75,6 +74,7 @@ header {
   letter-spacing: 0.03em;
   color: #4d5ae5;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .head-nav-link-foot {
@@ -96,6 +96,8 @@ header {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
+  display: block;
 }
 
 .nav-menu-link:hover,
@@ -121,6 +123,8 @@ header {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding: 24px 0;
+  display: block;
 }
 
 .adrs-menu-link:hover,
@@ -161,7 +165,7 @@ header {
   cursor: pointer;
   display: block;
   margin: 0 auto;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   border-radius: 4px;
   border: none;
@@ -232,18 +236,22 @@ header {
 }
 
 .team-list {
-display: flex;
-gap: 24px;
+  display: flex;
+  gap: 24px;
 }
 
 .team-list-item {
   background-color: #ffffff;
   text-align: center;
   width: calc((100% - 24px * 3) / 4);
+  border-radius: 0px, 0px, 4px, 4px;
 }
 
 .team-list-avatar {
-  margin-bottom: 32px;
+}
+
+.item-list-box {
+  padding: 32px 0;
 }
 
 .team-list-name {
@@ -260,12 +268,10 @@ gap: 24px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-bottom: 32px;
 }
 
 /* +++++ Container4 +++++ */
 .portfolio {
-  background-color: #f4f4fd;
   padding: 120px 0;
 }
 
@@ -282,7 +288,8 @@ gap: 24px;
 
 .portfolio-list {
   display: flex;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
   flex-wrap: wrap;
 }
 
@@ -291,7 +298,11 @@ gap: 24px;
 }
 
 .portfolio-list-item-picture {
-  margin-bottom: 32px;
+}
+
+.portfolio-list-box {
+  padding: 32px 16px;
+  border: 1px solid #E7E9FC;
 }
 
 .portfolio-list-item-title {
@@ -301,14 +312,12 @@ gap: 24px;
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
-  border: 1px solid #E7E9FC
 }
 
 .portfolio-list-item-desc {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-bottom: 32px;
 }
 
 /* ===== FOOTER ===== */
