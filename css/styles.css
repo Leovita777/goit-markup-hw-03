@@ -29,6 +29,10 @@ a:focus {
   color: #4d5ae5;
 }
 
+img {
+  display: block;
+}
+
 .container {
   width: 100%;
   max-width: 1158px;
@@ -51,7 +55,16 @@ header {
 .head:hover {
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .head-nav {
+  display: flex;
+  gap: 76px;
+  flex-grow: 1;
+  justify-content: space-between;
 }
 
 .head-nav-link {
@@ -65,17 +78,15 @@ header {
 }
 
 .head-nav-link-foot {
-  font-family: Raleway, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
   color: #2e2f42;
-  text-transform: uppercase;
 }
 
 .head-nav-menu {
+  display: flex;
+  gap: 40px;
+  margin-right: auto;
 }
+
 .nav-menu-item {
 }
 
@@ -97,7 +108,11 @@ header {
 }
 
 .adrs-menu {
+  display: flex;
+  gap: 40px;
+  align-items: center;
 }
+
 .adrs-menu-item {
 }
 
@@ -119,12 +134,9 @@ header {
 }
 
 .quote {
-  padding-bottom: 120px;
-}
-
-.quote-container {
+  padding-top: 188px;
+  padding-bottom: 188px;
   background: #2e2f42;
-  padding: 188px 472px 292px;
 }
 
 .quote-title {
@@ -134,8 +146,9 @@ header {
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
-  margin-bottom: 32px;
   max-width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 
 .quote-btn {
@@ -146,6 +159,12 @@ header {
   color: #ffffff;
   background: #4d5ae5;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  border: none;
 }
 
 .quote-btn:hover,
@@ -155,15 +174,29 @@ header {
 
 /* +++++ Container2 +++++ */
 .desc {
-  padding: 120px 156px;
+  padding: 120px 0;
 }
 
 .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .desc-list {
+  display: flex;
+  gap: 24px;
 }
+
 .desc-list-item {
+  width: calc((100% - 24px * 3) / 4);
 }
 
 .desc-list-subject {
@@ -184,6 +217,7 @@ header {
 /* +++++ Container3 +++++ */
 .team {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 
 .team-title {
@@ -194,16 +228,22 @@ header {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .team-list {
+display: flex;
+gap: 24px;
 }
 
 .team-list-item {
   background-color: #ffffff;
+  text-align: center;
+  width: calc((100% - 24px * 3) / 4);
 }
 
 .team-list-avatar {
+  margin-bottom: 32px;
 }
 
 .team-list-name {
@@ -213,17 +253,20 @@ header {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 8px;
 }
 
 .team-list-profession {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-bottom: 32px;
 }
 
 /* +++++ Container4 +++++ */
 .portfolio {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 
 .portfolio-title {
@@ -234,15 +277,21 @@ header {
   color: #2e2f42;
   text-transform: capitalize;
   text-align: center;
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
 .portfolio-list-item {
+  width: calc((100% - 24px * 2) / 3);
 }
 
 .portfolio-list-item-picture {
+  margin-bottom: 32px;
 }
 
 .portfolio-list-item-title {
@@ -251,16 +300,22 @@ header {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
+  border: 1px solid #E7E9FC
 }
+
 .portfolio-list-item-desc {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-bottom: 32px;
 }
 
 /* ===== FOOTER ===== */
 .foot {
   background: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .foot-link {
@@ -271,16 +326,12 @@ header {
   letter-spacing: 0.03em;
   color: #4d5ae5;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .foot-link-foot {
-  font-family: Raleway, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
   color: #f4f4fd;
-  text-transform: uppercase;
 }
 
 .foot-quote {
@@ -288,4 +339,5 @@ header {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
 }
